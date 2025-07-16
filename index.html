@@ -2,84 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Your Name - Resume</title>
+  <title>Eetu Hellén - Resume</title>
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
   <header>
     <h1>Eetu Hellén</h1>
-    <p>Student @ HAMK
+    <p data-fi="Opiskelija @ HAMK" data-en="Student @ HAMK">Student @ HAMK</p>
+    <!-- Kielivalikko -->
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="fi">Suomi</option>
+    </select>
   </header>
 
   <section>
-    <h2>Minä</h2>
-    <p>Olen 20-vuotias tieto- ja viestintätekniikan perustutkinnon suorittanut opiskelija, sekä aloitin Hämeen ammattikorkeakoulussa Tieto- Ja viestintätekniikan Insinööri opinnot.
-        Pystyn nopeasti omaksumaan uusia järjestelmiä. Työskentelen sujuvasti suomeksi ja englanniksi, ja saan usein palautetta rauhallisesta ja ratkaisukeskeisestä työotteestani.
-        <br>
-Etsin mahdollisuutta jatkaa uraani IT-alalla tehtävissä, joissa pääsen hyödyntämään teknistä osaamistani ja kehittymään edelleen.
-Olen käytettävissä 22.9.2025 alkaen, ja voin tarvittaessa osallistua myös perehdytykseen ennen sitä.
-Hämeen ammattikorkeakoulu opintoni ovat monimuoto-opinnot. Pystyn tekemään siis täysituntista viikkoa.
+    <h2 data-en="About Me" data-fi="Minä">About Me</h2>
+    <p 
+      data-en="I am a 20-year-old student with a vocational qualification in ICT. I have started my Bachelor of Engineering studies in ICT at Häme University of Applied Sciences. I quickly learn new systems. I work fluently in Finnish and English and often receive feedback for my calm and solution-focused approach. I am looking for an opportunity to continue my career in IT, where I can utilize my technical skills and keep developing further. I am available from September 22, 2025, and can participate in onboarding before that if needed. My HAMK studies are blended learning, so I am able to work full-time."
+      data-fi="Olen 20-vuotias tieto- ja viestintätekniikan perustutkinnon suorittanut opiskelija, sekä aloitin Hämeen ammattikorkeakoulussa tieto- ja viestintätekniikan insinööriopinnot. Pystyn nopeasti omaksumaan uusia järjestelmiä. Työskentelen sujuvasti suomeksi ja englanniksi, ja saan usein palautetta rauhallisesta ja ratkaisukeskeisestä työotteestani.Etsin mahdollisuutta jatkaa uraani IT-alalla tehtävissä, joissa pääsen hyödyntämään teknistä osaamistani ja kehittymään edelleen. Olen käytettävissä 22.9.2025 alkaen, ja voin tarvittaessa osallistua myös perehdytykseen ennen sitä. HAMK-opintoni ovat monimuoto-opinnot, joten pystyn tekemään täysiaikaisesti töitä.">
     </p>
   </section>
 
   <section>
-    <h2>Taidot</h2>
+    <h2 data-en="Experience" data-fi="Kokemus">Experience</h2>
+
+    <h3 data-en="ICT Support @ Finnish Defence Forces" data-fi="ICT-Tukihenkilö @ Puolustusvoimat">ICT Support @ Finnish Defence Forces</h3>
+    <p data-en="Microsoft Excel, Office 365, Training & Customer Support | 10 Feb - 17 Sep 2025" data-fi="Microsoft Excel, Office 365, Kouluttaminen & Asiakaspalvelu | 10.2 - 17.9.2025">
+      Microsoft Excel, Office 365, Training & Customer Support | 10 Feb - 17 Sep 2025
+    </p>
+
+    <h3 data-en="ICT Support @ Helsingin Kaupunki" data-fi="ICT-Tukihenkilö @ Helsingin Kaupunki">ICT Support @ Helsingin Kaupunki</h3>
+    <p data-en="Microsoft CRM, IBM MaaS360, Efecte, Telia VIP, Azure Directory & customer support | 1 Apr - 31 Dec 2024" data-fi="Microsoft CRM, IBM MaaS360, Efecte, Telia VIP, Azure Directory & asiakaspalvelua | 1.4 - 31.12.2024">
+      Microsoft CRM, IBM MaaS360, Efecte, Telia VIP, Azure Directory & customer support | 1 Apr - 31 Dec 2024
+    </p>
+
+    <h3 data-en="Cashier @ SOK" data-fi="Kassatyöntekijä @ SOK">Cashier @ SOK</h3>
+    <p data-en="Customer service & stress management | 27 Mar - 6 Aug 2023 | Summer Job" data-fi="Asiakaspalvelua & paineensietokykyä | 27.3 - 6.8.2023 | Kesätyö">
+      Customer service & stress management | 27 Mar - 6 Aug 2023 | Summer Job
+    </p>
+
+    <h3 data-en="IT Assistant @ Pasmart Oy" data-fi="IT Apulainen @ Pasmart Oy">IT Assistant @ Pasmart Oy</h3>
+    <p data-en="Raspberry Pi, HTML & CSS | 5 Sep - 12 Oct 2022 & 11 Apr - 19 May 2023 | Internship" data-fi="Raspberry Pi, HTML & CSS | 5.9 - 12.10.2022 & 11.4 - 19.5.2023 | Työharjoittelu">
+      Raspberry Pi, HTML & CSS | 5 Sep - 12 Oct 2022 & 11 Apr - 19 May 2023 | Internship
+    </p>
+  </section>
+
+  <section>
+    <h2 data-en="Skills" data-fi="Taidot">Skills</h2>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
       <li>IBM MaaS360</li>
-      <li>Linux & Microsoft ympäristö</li>
+      <li data-en="Linux & Microsoft environment" data-fi="Linux & Microsoft ympäristö">Linux & Microsoft environment</li>
       <li>Azure Active Directory</li>
-      <li>Telia VIP puhelinjäjrestelmä</li>
+      <li data-en="Telia VIP phone system" data-fi="Telia VIP puhelinjärjestelmä">Telia VIP phone system</li>
       <li>Microsoft CRM</li>
-      <li>Englannin kielitaito</li>
+      <li data-en="English language skills" data-fi="Englannin kielitaito">English language skills</li>
       <li>Excel</li>
       <li>Word</li>
-      <li>Powerpoint</li>
+      <li>PowerPoint</li>
     </ul>
   </section>
 
   <section>
-    <h2>Kokemus</h2>
-                <h3>ICT-Tukihenkilö @ Puolustusvoimat</h3>
-    <p>Microsoft Excel, Office 365, Kouluttaminen & Asiakaspalvelu | Varusmiespalvelus | 10.2 - 17.9.2025
+    <h2 data-en="Education" data-fi="Koulutus">Education</h2>
+    <p data-en="Bachelor of Engineering in ICT, Häme University of Applied Sciences, 2025-2028" data-fi="Tieto- ja viestintätekniikan Insinööri, Hämeen Ammattikorkeakoulu, 2025-2028">
+      Bachelor of Engineering in ICT, Häme University of Applied Sciences, 2025-2028
     </p>
-            <h3>ICT-Tukihenkilö @ Helsingin Kaupunki</h3>
-    <p>Microsoft CRM, IBM MaaS360, Efecte, Telia VIP, Azure Directory & asiakaspalvelua | 1.4 - 31.12.2024
+    <p data-en="Vocational Qualification in ICT, Lohja Luksia, 2021-2023" data-fi="Tieto- ja viestintätekniikan Perustutkinto, Lohja Luksia, 2021-2023">
+      Vocational Qualification in ICT, Lohja Luksia, 2021-2023
     </p>
-        </p>
-    <h3>Kassatyöntekijä @ SOK</h3>
-    <p>Asiakaspalvelua & paineensietokykyä | 27.3 - 6.8.2023 | Kesätyö
-    </p>
-
-    <h3>IT Apulainen @ Pasmart Oy</h3>
-    <p>Rasberry Pi, HTML & CSS | 5.9 - 12.10.2022 & 11.4 - 19.5.2023 |
-        Työharjoittelu
-
-
   </section>
 
   <section>
-    <h2>Koulutus</h2>
-        <p>Tieto- Ja viestintätekniikan Insinööri, Hämeen Ammattikorkeakoulu, 2025-2028</p>
-    <p>Tieto- Ja viestintätekniikan Perustutkinto, Lohja Luksia, 2021-2023</p>
-  </section>
-
-<!-- 
-  <section>
-    <h2>Projects</h2>
+    <h2 data-en="Links" data-fi="Linkit">Links</h2>
     <ul>
-      <li><a href="linkki">Project 1</a></li>
-      <li><a href="linkki">Project 2</a></li>
+      <li><a href="https://www.linkedin.com/in/eetu-hell%C3%A9n-402b62241/">LinkedIn</a></li>
+      <li><a href="https://github.com/EetuHelle">GitHub</a></li>
     </ul>
   </section>
--->
 
   <footer>
-    <p>Yhteistiedot: eetu@hellen.fi | +358 401416919</p>
-    <p><a href="https://www.linkedin.com/in/eetu-hell%C3%A9n-402b62241/">LinkedIn</a></p>
+    <p data-en="Contact: eetu@hellen.fi | +358 401416919" data-fi="Yhteystiedot: eetu@hellen.fi | +358 401416919">Contact: eetu@hellen.fi | +358 401416919</p>
   </footer>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
