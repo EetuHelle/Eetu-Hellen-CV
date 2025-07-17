@@ -235,7 +235,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #00000000; /* your header background */
+  background: #00000000; /* Otsikko tausta */
   color: #fff;
   padding: 20px;
   box-sizing: border-box;
@@ -245,7 +245,7 @@ header {
 
 #languageSwitcher {
   position: absolute;
-  top: 20px; /* adjust to align nicely inside header */
+  top: 20px; 
   right: 600px;
   padding: 8px 12px;
   border: none;
