@@ -1,4 +1,3 @@
-// Fade-in effect for sections
 const sections = document.querySelectorAll('section');
 
 const observer = new IntersectionObserver(entries => {
@@ -13,7 +12,6 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-// Header and profile image hide/show on scroll
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 const profilePicContainer = document.querySelector('.profile-pic-container');
@@ -22,11 +20,11 @@ window.addEventListener('scroll', function () {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
-    // Scrolling down
+    // alas
     header.style.top = "-160px";
     if (profilePicContainer) profilePicContainer.style.top = "-250px";
   } else {
-    // Scrolling up
+    // ylös
     header.style.top = "0";
     if (profilePicContainer) profilePicContainer.style.top = "150px";
   }
@@ -34,9 +32,9 @@ window.addEventListener('scroll', function () {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-// Language switcher
+// kielivalikko
 const switcher = document.getElementById('languageSwitcher');
-switcher.value = 'fi'; // set default to Finnish
+switcher.value = 'fi'; // default suomi
 
 function updateLanguage(lang) {
   document.querySelectorAll('[data-en]').forEach(el => {
@@ -48,11 +46,9 @@ switcher.addEventListener('change', () => {
   updateLanguage(switcher.value);
 });
 
-// On initial load → set to Finnish
 updateLanguage('fi');
 
 
-// Dropdown toggle for Links & Contact
 document.getElementById('dropdownBtn').addEventListener('click', () => {
   const dropdown = document.getElementById('dropdownContent');
   dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
